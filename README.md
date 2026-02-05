@@ -31,7 +31,7 @@
 
 <p align="center">
   <em>
-    Official codebase for<br>
+    Official Demo codebase for<br>
     <strong>"Spatially-Infused Spectrograms for Robust EEG Feature Extraction in Deep Learning Frameworks"</strong>
   </em>
 </p>
