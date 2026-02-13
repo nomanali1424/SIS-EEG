@@ -57,8 +57,6 @@ The framework supports:
   - **WSIS** (Without Spatial Infusion)
   - **SIS** (Spatially-Infused Spectrograms)
 - Automated experiment logging
-- Structured checkpoint saving
-- Structured result saving
 - Interpretability (Feature maps + Grad-CAM)
 
 
