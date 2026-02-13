@@ -62,6 +62,80 @@ The framework supports:
 - Interpretability (Feature maps + Grad-CAM)
 
 
+
+
+## Performance
+
+<table>
+  <tr>
+    <th rowspan="2">Data</th>
+    <th rowspan="2">Sub. Dep.</th>
+    <th rowspan="2">Emotion</th>
+    <th rowspan="2">#</th>
+    <th colspan="3">Accuracies</th>
+  </tr>
+  <tr>
+    <th>w/o SIS</th>
+    <th>SIS</th>
+    <th>Improv.</th>
+  </tr>
+
+  <!-- DENS Dep -->
+  <tr>
+    <td rowspan="12"><b>DENS</b></td>
+    <td rowspan="6">Dep</td>
+    <td>V</td><td>2</td><td>97.62</td><td>97.89</td><td>0.27</td>
+  </tr>
+  <tr><td>V</td><td>3</td><td>96.56</td><td>98.67</td><td>2.11</td></tr>
+  <tr><td>A</td><td>2</td><td>97.03</td><td>98.95</td><td>1.92</td></tr>
+  <tr><td>A</td><td>3</td><td>97.61</td><td>99.59</td><td>1.98</td></tr>
+  <tr><td>V-A</td><td>4</td><td>96.30</td><td>99.02</td><td>2.72</td></tr>
+  <tr><td>VAD</td><td>8</td><td>95.70</td><td>98.01</td><td>2.31</td></tr>
+  <tr><td colspan="6"><b>Average Improvement: 1.89%</b></td></tr>
+
+  <!-- DENS Indep -->
+  <tr>
+    <td rowspan="6">Indep</td>
+    <td>V</td><td>2</td><td>67.67</td><td>67.69</td><td>0.02</td>
+  </tr>
+  <tr><td>V</td><td>3</td><td>53.83</td><td>54.44</td><td>0.61</td></tr>
+  <tr><td>A</td><td>2</td><td>63.67</td><td>67.98</td><td>4.31</td></tr>
+  <tr><td>A</td><td>3</td><td>50.81</td><td>54.22</td><td>3.41</td></tr>
+  <tr><td>V-A</td><td>4</td><td>39.47</td><td>40.02</td><td>0.55</td></tr>
+  <tr><td>VAD</td><td>8</td><td>22.43</td><td>22.47</td><td>0.04</td></tr>
+  <tr><td colspan="6"><b>Average Improvement: 1.49%</b></td></tr>
+
+  <!-- DEAP Dep -->
+  <tr>
+    <td rowspan="12"><b>DEAP</b></td>
+    <td rowspan="6">Dep</td>
+    <td>V</td><td>2</td><td>96.30</td><td>97.33</td><td>1.03</td>
+  </tr>
+  <tr><td>V</td><td>3</td><td>95.10</td><td>97.01</td><td>1.91</td></tr>
+  <tr><td>A</td><td>2</td><td>96.31</td><td>97.78</td><td>1.47</td></tr>
+  <tr><td>A</td><td>3</td><td>94.58</td><td>96.02</td><td>1.44</td></tr>
+  <tr><td>V-A</td><td>4</td><td>94.96</td><td>98.97</td><td>4.01</td></tr>
+  <tr><td>VAD</td><td>8</td><td>93.26</td><td>93.88</td><td>0.62</td></tr>
+  <tr><td colspan="6"><b>Average Improvement: 1.75%</b></td></tr>
+
+  <!-- DEAP Indep -->
+  <tr>
+    <td rowspan="6">Indep</td>
+    <td>V</td><td>2</td><td>55.67</td><td>55.99</td><td>0.32</td>
+  </tr>
+  <tr><td>V</td><td>3</td><td>43.18</td><td>44.15</td><td>0.97</td></tr>
+  <tr><td>A</td><td>2</td><td>54.55</td><td>54.80</td><td>0.25</td></tr>
+  <tr><td>A</td><td>3</td><td>37.81</td><td>38.85</td><td>1.04</td></tr>
+  <tr><td>V-A</td><td>4</td><td>29.89</td><td>30.01</td><td>0.12</td></tr>
+  <tr><td>VAD</td><td>8</td><td>19.98</td><td>21.00</td><td>1.02</td></tr>
+  <tr><td colspan="6"><b>Average Improvement: 0.62%</b></td></tr>
+
+</table>
+
+
+
+
+
 # 📂 Project Structure
 
 ```
