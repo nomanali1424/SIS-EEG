@@ -37,3 +37,130 @@
 </p>
 
 <hr>
+
+
+
+
+
+# 📌 Overview
+
+This repository provides the official implementation of **SIS-EEG (Spatially-Infused Spectrograms)** — a spatially-aware EEG feature construction framework designed to enhance deep learning performance in affective computing tasks.
+
+The framework supports:
+
+- Multiple datasets: **DENS**, **DEAP**
+- Multiple tasks:
+  - Arousal (2-class / 3-class)
+  - Valence (2-class / 3-class)
+  - VAD (8-class)
+- Feature variants:
+  - **WSIS** (Without Spatial Infusion)
+  - **SIS** (Spatially-Infused Spectrograms)
+- Automated experiment logging
+- Structured checkpoint saving
+- Structured result saving
+- Interpretability (Feature maps + Grad-CAM)
+
+
+# 📂 Project Structure
+
+```
+SIS-EEG/
+│
+├── datasets/
+│ ├── data_loader.py
+│ ├── utils.py
+│
+├── feature_creation.py
+├── model.py
+├── main.py
+├── interpretability.py
+│
+├── checkpoints/
+├── results/
+│
+├── environment.yml
+├── requirements.txt
+└── README.md
+```
+
+---
+
+# 📥 Dataset Setup
+
+You must manually download the datasets.
+
+## 🔹 DENS
+
+Place files in:
+```
+data/DENS/
+│
+├── Emotional/
+│ ├── *.mat
+│
+└── wholeFrequencyDependentDataWithVADLFR_ReFormattingWholeFrequencyVA.xlsx
+```
+
+
+---
+
+## 🔹 DEAP
+
+Place files in:
+```
+data/DEAP/
+│
+├── s01.dat
+├── s02.dat
+...
+└── s32.dat
+```
+
+⚠ Folder names must match exactly.
+
+---
+
+# ⚙️ Installation
+
+## 🔹 Option 1 — Conda (Recommended)
+
+```bash
+conda env create -f environment.yml
+conda activate sis-eeg-env
+
+```
+## 🔹 Option 2 — Pip 
+```bash
+pip install -r requirements.txt
+```
+
+---
+# 🚀 Training
+
+Run experiments using:
+
+```bash
+python main.py --dataset_name DATASET --task TASK --num_classes N --feature_type FEATURE
+```
+
+🔹 Available Arguments
+Argument	Options	Description
+--dataset_name	DENS, DEAP	Dataset selection
+--task	A, V, VAD	Classification task
+--num_classes	2, 3, 8	Number of output classes
+--feature_type	SIS, WSIS	Feature construction type
+
+🔹 Example Commands
+Arousal (2-class) with SIS on DENS
+
+```bash
+python main.py --dataset_name DENS --task A --num_classes 2 --feature_type SIS
+```
+
+# 🔬 Interpretability
+
+To generate feature maps and Grad-CAM:
+```bash
+python interpretability.py --dataset_name DENS --task A --num_classes 2 --feature_type SIS
+```
