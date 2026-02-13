@@ -255,3 +255,18 @@ To generate feature maps and Grad-CAM:
 ```bash
 python interpretability.py --dataset_name DENS --task A --num_classes 2 --feature_type SIS
 ```
+
+
+## Citation
+
+If you use our code or otherwise find this work useful, please cite our paper:
+
+```bibtex
+@inproceedings{sis_eeg_2026,
+  title     = {Spatially-Infused Spectrograms for Robust EEG Feature Extraction in Deep Learning Frameworks},
+  author    = {Asif, Mohammad and Ali, Noman and Gupta, Aditya and Srivastava, Diya and Mishra, Sudhakar and Tiwary, Uma Shanker},
+  booktitle = {Proceedings of ICASSP},
+  year      = {2026},
+  note      = {Full citation details will be updated upon publication}
+}
+
