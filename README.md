@@ -235,14 +235,16 @@ Run experiments using:
 python main.py --dataset_name DATASET --task TASK --num_classes N --feature_type FEATURE
 ```
 
-🔹 Available Arguments
-Argument	Options	Description
---dataset_name	DENS, DEAP	Dataset selection
---task	A, V, VAD	Classification task
---num_classes	2, 3, 8	Number of output classes
---feature_type	SIS, WSIS	Feature construction type
+### Available Arguments
 
-🔹 Example Commands
+| Argument        | Options            | Description                    |
+|----------------|-------------------|--------------------------------|
+| `--dataset_name` | `DENS`, `DEAP`     | Dataset selection              |
+| `--task`         | `A`, `V`, `VAD`    | Classification task            |
+| `--num_classes`  | `2`, `3`, `8`      | Number of output classes       |
+| `--feature_type` | `SIS`, `WSIS`      | Feature construction type      |
+
+### Example Commands
 Arousal (2-class) with SIS on DENS
 
 ```bash
