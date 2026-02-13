@@ -1,0 +1,16 @@
+name: sis-eeg-env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - numpy
+  - scipy
+  - pandas
+  - matplotlib
+  - scikit-learn
+  - openpyxl
+  - pip
+  - pip:
+      - tensorflow==2.13.0
+      - keras==2.13.1
