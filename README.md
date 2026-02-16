@@ -61,15 +61,11 @@ The framework supports:
 
 
 
-
-## Performance
-
 ## Performance
 
 <table>
   <tr>
     <th rowspan="2">Data</th>
-    <th rowspan="2">Sub. Dep.</th>
     <th rowspan="2">Emotion</th>
     <th rowspan="2">#</th>
     <th colspan="3">Accuracies</th>
@@ -82,10 +78,8 @@ The framework supports:
 
   <!-- ================= DENS ================= -->
 
-  <!-- DENS Dep -->
   <tr>
-    <td rowspan="14"><b>DENS</b></td>
-    <td rowspan="6">Dep</td>
+    <td rowspan="7"><b>DENS</b></td>
     <td>V</td><td>2</td><td>97.62</td><td>97.89</td><td>0.27</td>
   </tr>
   <tr><td>V</td><td>3</td><td>96.56</td><td>98.67</td><td>2.11</td></tr>
@@ -93,19 +87,14 @@ The framework supports:
   <tr><td>A</td><td>3</td><td>97.61</td><td>99.59</td><td>1.98</td></tr>
   <tr><td>V-A</td><td>4</td><td>96.30</td><td>99.02</td><td>2.72</td></tr>
   <tr><td>VAD</td><td>8</td><td>95.70</td><td>98.01</td><td>2.31</td></tr>
-
   <tr>
-    <td colspan="6"><b>Average Improvement: 1.89%</b></td>
+    <td colspan="5"><b>Average Improvement: 1.89%</b></td>
   </tr>
-
-
 
   <!-- ================= DEAP ================= -->
 
-  <!-- DEAP Dep -->
   <tr>
-    <td rowspan="14"><b>DEAP</b></td>
-    <td rowspan="6">Dep</td>
+    <td rowspan="7"><b>DEAP</b></td>
     <td>V</td><td>2</td><td>96.30</td><td>97.33</td><td>1.03</td>
   </tr>
   <tr><td>V</td><td>3</td><td>95.10</td><td>97.01</td><td>1.91</td></tr>
@@ -113,12 +102,9 @@ The framework supports:
   <tr><td>A</td><td>3</td><td>94.58</td><td>96.02</td><td>1.44</td></tr>
   <tr><td>V-A</td><td>4</td><td>94.96</td><td>98.97</td><td>4.01</td></tr>
   <tr><td>VAD</td><td>8</td><td>93.26</td><td>93.88</td><td>0.62</td></tr>
-
   <tr>
-    <td colspan="6"><b>Average Improvement: 1.75%</b></td>
+    <td colspan="5"><b>Average Improvement: 1.75%</b></td>
   </tr>
-
-
 
 </table>
 
